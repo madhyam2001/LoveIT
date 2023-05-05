@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "582386954910",
+    "project_id": "loveit-665dc",
+    "storage_bucket": "loveit-665dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582386954910:android:c8c15db77c1554e090418f",
+        "android_client_info": {
+          "package_name": "com.example.loveit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582386954910-k8kvck2at3597vs4tj48mef1pvct9a7i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDByFsuWwplb5-1tS8FbD2Utbm_mLbd2t4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582386954910-k8kvck2at3597vs4tj48mef1pvct9a7i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.LoginActivity">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/undraw_missed_chances_k_3_cq"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/materialCardView2" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-70dp"
+        android:layout_marginHorizontal="36dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/enternumber"
+        android:visibility="visible"
+        android:layout_width="242dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="-130dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="324dp"
+        android:background="@color/white"
+        android:text="Enter Your Number"
+        android:paddingTop="12dp"
+        android:paddingLeft="12dp"
+        android:paddingBottom="12dp"
+        app:layout_constraintCircleRadius="12dp"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image1"
+        app:layout_constraintVertical_bias="0.57"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/number"
+        android:visibility="visible"
+        android:layout_width="244dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginBottom="360dp"
+        android:inputType="number"
+        android:drawableLeft="@drawable/ic_baseline_phone_24"
+        android:padding="12dp"
+        android:drawablePadding="12dp"
+        android:hint="Number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image1"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/sendotp"
+        android:visibility="visible"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:text="Send OTP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enternumber"
+        app:layout_constraintVertical_bias="0.173"
+        app:layout_constraintHeight="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <TextView
+        android:id="@+id/enterotp"
+        android:visibility="gone"
+        android:layout_width="242dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="-130dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="324dp"
+        android:background="@color/white"
+        android:text="Enter OTP"
+        android:paddingTop="12dp"
+        android:paddingLeft="12dp"
+        android:paddingBottom="12dp"
+        app:layout_constraintCircleRadius="12dp"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image1"
+        app:layout_constraintVertical_bias="0.57"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/otp"
+        android:visibility="gone"
+        android:layout_width="244dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginBottom="360dp"
+        android:drawableLeft="@drawable/ic_baseline_phone_24"
+        android:padding="12dp"
+        android:drawablePadding="12dp"
+        android:inputType="number"
+        android:hint="OTP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image1"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/verifyotp"
+        android:visibility="gone"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterotp"
+        app:layout_constraintVertical_bias="0.173"
+        android:text="Verify OTP"
+        app:layout_constraintHeight="wrap_content"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
