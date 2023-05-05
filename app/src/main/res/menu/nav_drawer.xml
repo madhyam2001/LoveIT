@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/favourite"
+        android:title="Favourite"
+        android:icon="@drawable/feedback"/>
+
+    <item
+        android:id="@+id/rateus"
+        android:title="Rate Us"
+        android:icon="@drawable/rating"/>
+    <item
+        android:id="@+id/share"
+        android:title="Share with Friends"
+        android:icon="@drawable/share"/>
+    <item
+        android:id="@+id/termsandcond"
+        android:title="Terms and Conditions"
+        android:icon="@drawable/agreement"/>
+    <item
+        android:id="@+id/privacyPolicy"
+        android:title="Privacy Policy"
+        android:icon="@drawable/privacypolicy"/>
+    <item
+        android:id="@+id/developer"
+        android:title="Developer"
+        android:icon="@drawable/coding"/>
+
+</menu>
