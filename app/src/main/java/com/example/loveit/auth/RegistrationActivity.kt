@@ -91,6 +91,7 @@ class RegistrationActivity : AppCompatActivity() {
         val data=UserModel(
             name = binding.userName.text.toString(),
             city = binding.userCity.text.toString(),
+            number=FirebaseAuth.getInstance().currentUser?.phoneNumber.toString(),
             email = binding.userEmail.text.toString(),
             image = imageUrl.toString(),
         )

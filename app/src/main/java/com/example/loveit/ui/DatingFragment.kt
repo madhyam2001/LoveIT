@@ -13,6 +13,7 @@ import com.example.loveit.R
 import com.example.loveit.adapter.DatingAdapter
 import com.example.loveit.databinding.FragmentDatingBinding
 import com.example.loveit.model.UserModel
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
@@ -84,6 +85,7 @@ class DatingFragment : Fragment() {
     }
 
     private fun getdata() {
+        val currentUserEmail = FirebaseAuth.getInstance().currentUser?.email
         FirebaseDatabase.getInstance().getReference("users")
             .addValueEventListener(object: ValueEventListener{
                 override fun onDataChange(snapshot: DataSnapshot) {
@@ -94,7 +96,11 @@ class DatingFragment : Fragment() {
                         for (data in snapshot.children)
                         {
                             val model=data.getValue(UserModel::class.java)
-                            list!!.add(model!!)
+
+                            if (model!!.number != FirebaseAuth.getInstance().currentUser!!.phoneNumber) { // exclude the current user
+                                list!!.add(model)
+                            }
+
                         }
                         list!!.shuffle()
                         init()
